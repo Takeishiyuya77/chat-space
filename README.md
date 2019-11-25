@@ -7,7 +7,7 @@
 |email|string|null: false|
 |password|string|null: false|
 
-### association
+### Association
 - has_many :tweets
 - has_many :groups
 - has_many  :groups,  through:  :groups_users
@@ -29,7 +29,8 @@
 
 ### Association
 - has_many :users
-- has_many  :users,  through:  :groups_users
+- has_many :users,  through:  :groups_users
+- has_many :tweets
 
 ## groups_usersテーブル
 
