@@ -15,7 +15,7 @@
  ## tweetsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|image|text||
+|image|string||
 |text|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
@@ -27,7 +27,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
+|name|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :groups_users
